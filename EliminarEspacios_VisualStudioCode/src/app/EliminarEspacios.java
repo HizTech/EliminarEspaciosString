@@ -2,7 +2,7 @@ package app;
 
 public class EliminarEspacios {
 
-    public String EliminarEspaciosMetodoIncial(String cadena){
+    public String eliminarEspaciosMetodoIncial(String cadena){
 
         String newCadena="";
 
@@ -15,7 +15,7 @@ public class EliminarEspacios {
         return newCadena;
     }
 
-    public String EliminarEspaciosMetodoSecundario(String cadena){
+    public String eliminarEspaciosMetodoSecundario(String cadena){
 
         StringBuilder newCadena = new StringBuilder(cadena);
 
@@ -38,8 +38,8 @@ public class EliminarEspacios {
 
         String cadena = " Hola Mundo \n 1";
 
-        cadena = principal.EliminarEspaciosMetodoIncial(cadena);
-        cadena = principal.EliminarEspaciosMetodoSecundario(cadena);
+        cadena = principal.eliminarEspaciosMetodoIncial(cadena);
+        cadena = principal.eliminarEspaciosMetodoSecundario(cadena);
 
         System.out.println("Metodo Incial: "+cadena+ " longitud: "+cadena.length());
         System.out.println("Metodo Secundario: "+cadena+ " longitud: "+cadena.length());
